@@ -1,0 +1,59 @@
+<html>
+    <header>
+        <title>Estudio Escabroso</title>
+
+        <style>
+            body, .container, html{
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .logo{
+                display: inline-block;
+                height: 500px;
+                width: 500px;
+            }
+
+            .social-media {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .social-media img {
+                width: 50px;
+                margin: 10px 20px;
+            }
+
+            .filter {
+                position: absolute;
+                left: 0;
+                top:0;
+                width:100%;
+                height:100%;
+                background: url(./filtro_003.png) no-repeat; background-size: cover;
+            }
+        </style>
+    </header>
+    <body>
+        <div class="container">
+            <div class="logo">
+                <img src="./logo-escabroso.png" alt="Estudio Escabroso" width="500px">
+
+                <div class="social-media">
+                    <div><a href="https://www.instagram.com/estudio.escabroso/" target="_blank"><img src="./instagram.png" alt="Instagram"></a></div>
+                    <div><a href=""><img src="./youtube.png" alt="Youtuber" target="_blank"></a></div>
+                    <div><a href=""><img src="./xwitter.png" alt="Xuitter" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="filter"></div>
+    </body>
+</html>
