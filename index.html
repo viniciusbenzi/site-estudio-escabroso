@@ -19,6 +19,7 @@
                 display: inline-block;
                 height: 500px;
                 width: 500px;
+                opacity: 0.8;
             }
 
             .social-media {
@@ -29,31 +30,26 @@
 
             .social-media img {
                 width: 50px;
-                margin: 10px 20px;
+                margin: -100px 20px;
+                opacity: 0.8;
             }
 
             .filter {
-                position: absolute;
-                left: 0;
-                top:0;
-                width:100%;
-                height:100%;
                 background: url(./filtro_003.png) no-repeat; background-size: cover;
             }
         </style>
     </header>
-    <body>
+    <body class="filter">
         <div class="container">
             <div class="logo">
                 <img src="./logo-escabroso.png" alt="Estudio Escabroso" width="500px">
-
-                <div class="social-media">
-                    <div><a href="https://www.instagram.com/estudio.escabroso/" target="_blank"><img src="./instagram.png" alt="Instagram"></a></div>
-                    <div><a href=""><img src="./youtube.png" alt="Youtuber" target="_blank"></a></div>
-                    <div><a href=""><img src="./xwitter.png" alt="Xuitter" target="_blank"></a></div>
-                </div>
             </div>
         </div>
-        <div class="filter"></div>
+        <div class="social-media">
+            <div><a href="https://www.instagram.com/estudio.escabroso/" target="_blank"><img src="./instagram.png" alt="Instagram"></a></div>
+            <div><a href=""><img src="./youtube.png" alt="Youtuber" target="_blank"></a></div>
+            <div><a href=""><img src="./xwitter.png" alt="Xuitter" target="_blank"></a></div>
+        </div>        
+        
     </body>
 </html>
