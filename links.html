@@ -9,75 +9,107 @@
             }
 
             .container{
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 z-index: 1;
             }
 
-            .logo{
-                display: inline-block;
-                height: 500px;
-                width: 500px;
+            .logo {
+                display: block;
+                height: 300px;
+                width: 100%;
                 opacity: 0.8;
+                text-align: center;
+                overflow: hidden;
             }
 
             .logo img {
-                height: 500px;
-                width: 500px;
+                color: #312f30;
             }
-            
-            .links a {
+
+            .press-kit {
+                position: relative;
                 display: flex;
-                height: 120px;
-                border: dashed 5px #1d1d1d;
-                border-radius: 20px;
-                margin: 20px;
-                text-decoration: none;
-                color: #1d1d1d;
+                align-items: center;
+                justify-content: center;
             }
 
-            .links a img {
-                display: inline;
-                width: 50px;
+            .press-kit a {
+                display: block;
+                margin: 0 20px;
+                font-size: 20px;
+                color: #312f30;
+                z-index: 1000;
+            }
+
+            .social-media {
+                min-width: 800px;
+                margin: 20px 20px 50px;
+            }
+
+            .social-media div {
+                display: block;
                 height: 50px;
-                margin: 35px;
+                margin: 20px 0;
+                padding: 10px 0;
+                border-radius: 20px;
+                border:5px dotted;
+                text-align: center;
             }
 
-            .links a span{
-                margin: 40px 0px;
+            .social-media div a {
+                display: inline-block;
+                width: 100%;
+                color: #312f30;
+            }
+
+            .social-media div:hover {
+                border:4px solid #312f30;
+            }
+
+            .social-media div a span {
+                float: left;
+                margin: 10px;
                 font-size: 30px;
             }
 
-            .itch span {
-                margin: 40px !important;
+            .social-media div a img {
+                float: right;
+                width: 50px;
+                opacity: 0.8;
             }
 
+            .filter {
+                background: url(./filtro_003.png) no-repeat; background-size: cover;
+            }
         </style>
     </header>
     <body class="filter">
         <div class="container">
             <div class="logo">
-                <img src="./logo-escabroso.png" alt="Estudio Escabroso">
+                <img src="./logo-escabroso.svg" alt="Estudio Escabroso" width="500px">
             </div>
-        </div>
-        <div class="links">
-            <a href="https://www.instagram.com/estudio.escabroso/" target="_blank">
-                <img src="./instagram.png" alt="Instagram">
-                <span>INSTAGRAM</span>
-            </a>
-            <a href="https://twitter.com/stdEscabroso" target="_blank">
-                <img src="./xwitter.png" alt="Xuitter">
-                <span>XUITTER</span>
-            </a>
-            <a href="https://www.youtube.com/watch?v=XRnSbpv0crs" target="_blank">
-                <img src="./youtube.png" alt="Youtube">
-                <span>YOUTUBE</span>
-            </a>
-            <a href="https://viniciusbenzi.itch.io/calum" target="_blank" class="itch">
-                <span>ITCH.IO (DEMO ALPHA)</span>
-            </a>
-        </div>      
-        
+            <div class="social-media">
+                <div>
+                    <a href="https://www.instagram.com/estudio.escabroso/" target="_blank">
+                        <span>INSTAGRAM</span><img src="./instagram.png" alt="Instagram"></a>
+                </div>
+                <div>
+                    <a href="https://viniciusbenzi.itch.io/calum" target="_blank"><span>DEMO (itch.io)</span></a>
+                </div>
+                <div>
+                    <a href="./calum.html" target="_blank"><span>VIDEOS</span></a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/@EstudioEscabroso" target="_blank">
+                        <span>YOUTUBE</span><img src="./youtube.png" alt="Youtuber" target="_blank"></a>
+                </div>
+                <div>
+                    <a href="https://bsky.app/profile/estudio-escabroso.bsky.social" target="_blank">
+                        <span>BLUESKY</span><img src="./blue-sky.png" alt="Bluesky" target="_blank"></a>
+                </div>
+                <div>
+                    <a href="./apresentacao.pdf" target="_blank"><span>APRESENTAÇÃO</span></a>
+                </div>
+            </div> 
+        </div>        
     </body>
 </html>
